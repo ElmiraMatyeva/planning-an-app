@@ -1,0 +1,52 @@
+Planning an App
+
+ 1. Answer some questions
+ 2. User stories
+ 3. Model our data
+ 4. Think through the pages we need in our app
+
+1. QUESTIONS
+ 	1. What are we building?
+ 	Describe your app
+ 	2. Who are we building it for?
+ 	Who will use our app
+ 	3. What features do we want to have?
+ 		- users (collections)
+ 		- authentication
+ 		- CRUD (create, read, update, destroy)
+ 		- uploading images, thumbnails etc
+ 		- deploy on Heroku
+ 
+2. USER STORIES
+ 
+ 	- As a user, I want to __ because of __
+ 	- As an authorized user, I want to be able to __ so that __
+
+3. MODEL OUR DATA
+ 	1. Collection
+ 		has_many :resources
+ 				- name
+ 				- email
+ 				- password
+ 				- title
+ 				- description
+ 				- thumbnail
+ 				- and so on
+
+ 	2. Resource
+ 		belongs_to :collection
+ 				- title
+ 				- description
+ 				- etc
+ 	
+4. PAGES
+	1. Welome page (welcome#index)
+	2. Sign in (session#new)
+	3. Sign up (registration#new)
+	4. Collections (collection#index)
+	5. Collection Single (collection#show)
+	6. Collection Edit (collection#edit)
+	7. Resource Page (resource#show)
+	8. Resource New (resource#new)
+	9. Resource Edit (resource#edit)
+	10. Dashboard )resource#dashboard)
